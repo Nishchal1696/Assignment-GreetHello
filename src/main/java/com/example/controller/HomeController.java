@@ -14,7 +14,7 @@ public class HomeController {
 	@GetMapping("/hello")
 	@ResponseBody
 	public String greetMessage() {
-		return "Hello World!";
+		return "Hello World!"; 
 	}
 	
 	@GetMapping("/helloName")
