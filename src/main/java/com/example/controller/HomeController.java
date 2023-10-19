@@ -15,13 +15,11 @@ public class HomeController {
 	@ResponseBody
 	public String greetMessage() {
 		return "Hello World!";
-		//http://localhost:7000/greetapi/v1/hello
 	}
 	
 	@GetMapping("/helloName")
 	@ResponseBody
 	public String greetMessageWithName(@RequestParam(name = "fName") String name) {
 		return "Hello "+name;
-		//http://localhost:7000/greetapi/v1/helloName?fName=Nishchal
 	}
 }
